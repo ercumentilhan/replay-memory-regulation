@@ -1,2 +1,5 @@
-# replay-memory-regulation
-Replay Memory Regulation for Action Advising
+# Replay Memory Regulation for Action Advising
+
+**Requirements:**
+tensorflow=1.13.1
+opencv-python
