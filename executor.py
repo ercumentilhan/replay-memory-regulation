@@ -1,27 +1,17 @@
 import os
-import psutil
 from time import localtime, strftime
 import pathlib
 import glob
 import shutil
 import random
 import numpy as np
-
-import cv2
-
 import tensorflow as tf
-
+import cv2
 from dqn_agent import DQNAgent
 from statistics import Statistics
 from rnd import RND
 
-cv2.ocl.setUseOpenCL(False)
 os.environ['TF_CPP_MIN_LONG_LEVEL'] = '2'
-
-import matplotlib.pyplot as plt
-
-
-plt.rcParams.update({'font.size': 14})
 
 
 class Executor:
@@ -124,8 +114,6 @@ class Executor:
     # ------------------------------------------------------------------------------------------------------------------
 
     def run(self):
-        self.process = psutil.Process(os.getpid())
-
         os.environ['PYTHONHASHSEED'] = str(self.config['seed'])
         random.seed(self.config['seed'])
         np.random.seed(self.config['seed'])
@@ -582,9 +570,6 @@ class Executor:
         for file in files:
             if os.path.isfile(file):
                 shutil.copy2(file, target_directory)
-
-    def print_memory_usage(self):
-        print('-- RAM: {}'.format(self.process.memory_info().rss / (1024 * 1024)))
 
     def save_config(self, config, filepath):
         fo = open(filepath, "w")
