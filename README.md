@@ -1,10 +1,12 @@
 # Replay Memory Regulation for Action Advising
 
-**Requirements:**  
-tensorflow=1.13.1  
-opencv-python  
+## Requirements
+**Dependencies**
+- numpy
+- opencv-python
+- tensorflow=1.13.1  
 
-**Environments:**  
-LavaWorld: https://github.com/ercumentilhan/LavaWorld  
-MinAtar: https://github.com/ercumentilhan/MinAtar  
+**Environments**  
+- [LavaWorld](https://github.com/ercumentilhan/LavaWorld) 
+- [MinAtar](https://github.com/ercumentilhan/MinAtar) 
 
