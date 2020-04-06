@@ -21,6 +21,7 @@ import lavaworld.environment
 # 221, 224, 225 - Uniformly Random with RM checking (RND)
 
 # MinAtar
+#
 # 0 - No Advising
 # 104, 105, 107 - Early Advising
 # 124, 125, 127 - Early Advising with RM checking (RND)
