@@ -3,31 +3,6 @@ from executor import Executor
 import minatar
 import lavaworld.environment
 
-# Experiment setup format (experiment-setup): abc (0: No Advising)
-# a: Action advising method
-# -- 1: Early advising
-# -- 2: Uniformly random advising
-# b: Replay memory checking (0: None, 1: Counter, 2: RND)
-# c: Budget
-
-# LavaWorld
-#
-# 0 - No Advising
-# 101, 104, 105 - Early Advising
-# 111, 114, 115 - Early Advising with RM checking (State Counting)
-# 121, 124, 125 - Early Advising with RM checking (RND)
-# 201, 204, 205 - Uniformly Random
-# 211, 214, 215 - Uniformly Random with RM checking (State Counting)
-# 221, 224, 225 - Uniformly Random with RM checking (RND)
-
-# MinAtar
-#
-# 0 - No Advising
-# 104, 105, 107 - Early Advising
-# 124, 125, 127 - Early Advising with RM checking (RND)
-# 204, 205, 207 - Uniformly Random
-# 224, 225, 227 - Uniformly Random with RM checking (RND)
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
